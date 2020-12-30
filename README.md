@@ -394,13 +394,12 @@ public class ConsumerApplication {
 ```
 
 ### 6.测试
-* 先启动本地Nacos服务器，访问http://localhost:8848/nacos/ 
+* 1.启动本地Nacos服务器，访问`http://localhost:8848/nacos/ `
 控制台显示如下：
 
+* 2.依次启动`demo-dubbo-nacos-provider`、`demo-dubbo-nacos-consumer`
 
-* 然后依次启动demo-dubbo-nacos-provider、demo-dubbo-nacos-consumer
-
-* 调试测试接口
+* 3.调试测试接口 `http://localhost:8867/greet?name=bamaw`
 
 
 
