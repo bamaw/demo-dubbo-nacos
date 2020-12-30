@@ -396,11 +396,11 @@ public class ConsumerApplication {
 ### 6.测试
 * 1.启动本地Nacos服务器，访问`http://localhost:8848/nacos/ `
 控制台显示如下：
-
+![](https://i.loli.net/2020/12/30/ZMo6aEcxHhz7dpL.png)
 * 2.依次启动`demo-dubbo-nacos-provider`、`demo-dubbo-nacos-consumer`
-
+![](https://i.loli.net/2020/12/30/pe9LtObP5IklAMr.png)
 * 3.调试测试接口 `http://localhost:8867/greet?name=bamaw`
-
+![](https://i.loli.net/2020/12/30/yFDfoMOgdR5ZwAH.png)
 
 
 
