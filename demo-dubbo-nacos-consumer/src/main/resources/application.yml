@@ -1,0 +1,20 @@
+server:
+  port: 8867
+
+spring:
+  application:
+    # 应用名称
+    name: demo-dubbo-nacos-consumer
+  # 配置 Nacos 注册中心
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+dubbo:
+  application:
+    name: demo-dubbo-nacos-consumer
+  cloud:
+    # 用于消费者订阅提供方的应用名称列表
+    subscribed-services: demo-dubbo-nacos-provider
+  scan:
+    base-packages: com.daobili.provider

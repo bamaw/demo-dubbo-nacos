@@ -1,0 +1,32 @@
+server:
+  port: 8866
+
+spring:
+  application:
+    # 应用名称
+    name: demo-dubbo-nacos-provider
+  # 配置 Nacos 注册中心
+  cloud:
+    nacos:
+      discovery:
+        # Nacos 服务器地址-单机版
+        server-addr: 127.0.0.1:8848
+
+dubbo:
+  # 提供方应用信息，用于计算依赖关系
+  application:
+    name: demo-dubbo-nacos-provider
+  # 扫描需要暴露的服务，可以被 @EnableDubbo 注解替代
+  scan:
+    base-packages: com.daobili.provider
+
+  # 用 dubbo 协议在 20880 端口暴露服务
+  protocol:
+    name: dubbo
+    port: 20880
+  # 使用 nacos 注册中心暴露服务地址
+  registry:
+    protocol: nacos
+    address: spring-cloud://localhost
+
+
